@@ -9,4 +9,7 @@ import Foundation
 
 final class Locator{
     let auth = LoginViewModel()
+    let memberPoint = MemberPointViewModel()
+    let memberProfile = MemberProfileViewModel()
+    let register = RegisterViewModel()
 }

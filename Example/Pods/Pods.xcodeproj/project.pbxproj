@@ -20,6 +20,14 @@
 		74A4FC2D22B9E5290008BF97 /* Locator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC2C22B9E5290008BF97 /* Locator.swift */; };
 		74A4FC2F22B9E5450008BF97 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC2E22B9E5450008BF97 /* Global.swift */; };
 		74A4FC3122B9E5580008BF97 /* GoodieCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC3022B9E5580008BF97 /* GoodieCore.swift */; };
+		74A4FC3322B9EF960008BF97 /* MemberPointRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC3222B9EF960008BF97 /* MemberPointRequest.swift */; };
+		74A4FC3522B9EFB90008BF97 /* MemberPointResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC3422B9EFB90008BF97 /* MemberPointResponse.swift */; };
+		74A4FC3722B9EFE60008BF97 /* MemberPointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC3622B9EFE60008BF97 /* MemberPointViewModel.swift */; };
+		74A4FC3922B9F0AF0008BF97 /* MemberProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC3822B9F0AF0008BF97 /* MemberProfileResponse.swift */; };
+		74A4FC3B22B9F0D70008BF97 /* MemberProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC3A22B9F0D70008BF97 /* MemberProfileViewModel.swift */; };
+		74A4FC3D22B9F1580008BF97 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC3C22B9F1580008BF97 /* RegisterRequest.swift */; };
+		74A4FC3F22B9F1730008BF97 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC3E22B9F1730008BF97 /* RegisterResponse.swift */; };
+		74A4FC4122B9F1950008BF97 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC4022B9F1950008BF97 /* RegisterViewModel.swift */; };
 		7A3FA336A8B1E17A0C46C47B21968D0A /* GoodieCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B08A857F549E25E56E8CA40BF538474 /* GoodieCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		877EC3BD20D606F0F547E1947711B11F /* Pods-GoodieCore_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC12019B50FC48A7C8EFE39547641CFA /* Pods-GoodieCore_Tests-dummy.m */; };
 		AABA367670DAE3CC52EA2326313B655F /* Pods-GoodieCore_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED0A82F5B535B1A5441B3555F26253A0 /* Pods-GoodieCore_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -74,6 +82,14 @@
 		74A4FC2C22B9E5290008BF97 /* Locator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locator.swift; sourceTree = "<group>"; };
 		74A4FC2E22B9E5450008BF97 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		74A4FC3022B9E5580008BF97 /* GoodieCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodieCore.swift; sourceTree = "<group>"; };
+		74A4FC3222B9EF960008BF97 /* MemberPointRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberPointRequest.swift; sourceTree = "<group>"; };
+		74A4FC3422B9EFB90008BF97 /* MemberPointResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberPointResponse.swift; sourceTree = "<group>"; };
+		74A4FC3622B9EFE60008BF97 /* MemberPointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberPointViewModel.swift; sourceTree = "<group>"; };
+		74A4FC3822B9F0AF0008BF97 /* MemberProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberProfileResponse.swift; sourceTree = "<group>"; };
+		74A4FC3A22B9F0D70008BF97 /* MemberProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberProfileViewModel.swift; sourceTree = "<group>"; };
+		74A4FC3C22B9F1580008BF97 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		74A4FC3E22B9F1730008BF97 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		74A4FC4022B9F1950008BF97 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		846925CA244BE7319ACD6C604E2B9BF5 /* GoodieCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoodieCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FDF56CD53494D44723D8C08D76C873 /* Pods-GoodieCore_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoodieCore_Tests.modulemap"; sourceTree = "<group>"; };
 		9AB1A28CD91C701E99250863996F21C4 /* Pods-GoodieCore_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoodieCore_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -195,6 +211,9 @@
 			children = (
 				74A4FC2422B9E4910008BF97 /* AbstractResponse.swift */,
 				74A4FC2622B9E4A60008BF97 /* LoginResponse.swift */,
+				74A4FC3422B9EFB90008BF97 /* MemberPointResponse.swift */,
+				74A4FC3822B9F0AF0008BF97 /* MemberProfileResponse.swift */,
+				74A4FC3E22B9F1730008BF97 /* RegisterResponse.swift */,
 			);
 			path = Resp;
 			sourceTree = "<group>";
@@ -203,6 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				74A4FC2222B9E4760008BF97 /* LoginRequest.swift */,
+				74A4FC3222B9EF960008BF97 /* MemberPointRequest.swift */,
+				74A4FC3C22B9F1580008BF97 /* RegisterRequest.swift */,
 			);
 			path = Req;
 			sourceTree = "<group>";
@@ -230,6 +251,9 @@
 			children = (
 				74A4FC2A22B9E4FE0008BF97 /* LoginViewModel.swift */,
 				74A4FC2C22B9E5290008BF97 /* Locator.swift */,
+				74A4FC3622B9EFE60008BF97 /* MemberPointViewModel.swift */,
+				74A4FC3A22B9F0D70008BF97 /* MemberProfileViewModel.swift */,
+				74A4FC4022B9F1950008BF97 /* RegisterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -448,17 +472,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				74A4FC2522B9E4910008BF97 /* AbstractResponse.swift in Sources */,
+				74A4FC3B22B9F0D70008BF97 /* MemberProfileViewModel.swift in Sources */,
+				74A4FC3D22B9F1580008BF97 /* RegisterRequest.swift in Sources */,
 				74A4FC1F22B9E4400008BF97 /* Route.swift in Sources */,
 				367A8A31C7C64EEE3FD0C5FC1F07F7C2 /* GoodieCore-dummy.m in Sources */,
 				74A4FC2122B9E4530008BF97 /* Api.swift in Sources */,
 				74A4FC2322B9E4760008BF97 /* LoginRequest.swift in Sources */,
 				74A4FC1D22B9E4230008BF97 /* Service.swift in Sources */,
 				74A4FC2F22B9E5450008BF97 /* Global.swift in Sources */,
+				74A4FC3522B9EFB90008BF97 /* MemberPointResponse.swift in Sources */,
 				74A4FC3122B9E5580008BF97 /* GoodieCore.swift in Sources */,
+				74A4FC4122B9F1950008BF97 /* RegisterViewModel.swift in Sources */,
 				74A4FC2D22B9E5290008BF97 /* Locator.swift in Sources */,
 				74A4FC2722B9E4A60008BF97 /* LoginResponse.swift in Sources */,
 				74A4FC2922B9E4CA0008BF97 /* ClientConnect.swift in Sources */,
+				74A4FC3322B9EF960008BF97 /* MemberPointRequest.swift in Sources */,
 				74A4FC2B22B9E4FE0008BF97 /* LoginViewModel.swift in Sources */,
+				74A4FC3922B9F0AF0008BF97 /* MemberProfileResponse.swift in Sources */,
+				74A4FC3722B9EFE60008BF97 /* MemberPointViewModel.swift in Sources */,
+				74A4FC3F22B9F1730008BF97 /* RegisterResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
