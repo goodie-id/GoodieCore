@@ -14,7 +14,7 @@
 | Lite Version Goodie SDK     | Goodie SDK without UI       |
 
 
-## Featur GoodieCore
+## Feature
 
 - [x] Register
 - [x] Login
@@ -57,7 +57,43 @@ Then, run the following command:
 $ pod install
 ```
 
-## Authentication
+## Register Member
+
+This register is done by calling Goodie.register() function. This function will retrieve or create user.
+Here is example:
+
+```
+GoodieCore.register(username: username, merchantId: merchantId, phoneNumber: phoneNumber, password: password, firstName: firstName, lastName: lastName, deviceUniqId: deviceUniqId, birthDate: birthDate, referralCode: referralCode, completion: { (RegisterResponse) in
+    if RegisterResponse.abstractResponse?.responseStatus == "MEM000" {
+        //success
+    }else{
+        //failed
+    }
+}) { (Error) in
+    //error
+}
+```
+
+## Verification Member
+
+This verification is done by calling Goodie.setVerification() function. This function will retrieve based on the username, merchantId, verificationCode. 
+Here is example:
+
+
+```
+GoodieCore.register(username: username, merchantId: merchantId, phoneNumber: phoneNumber, password: password, firstName: firstName, lastName: lastName, deviceUniqId: deviceUniqId, birthDate: birthDate, referralCode: referralCode, completion: { (RegisterResponse) in
+    if VerificationResponse.abstractResponse?.responseStatus == "MEM000" {
+        //success
+    }else{
+        //failed
+    }
+}) { (Error) in
+//error
+}
+```
+
+
+## Authentication / Login
 
 This login is done by calling GoodieCore.login() function. This function will retrieve based on the deviceUniqueId, username, password, merchantCode. 
 Here is example:
@@ -73,6 +109,40 @@ GoodieCore.login(deviceUniqueId: deviceId, username: username, password: passwor
     //error
 }
 ```
+
+
+## Member Point
+
+This member point is done by calling Goodie.memberPoint() function. This function will retrieve based on the memberId, merchantId. Here is example:
+
+```
+GoodieCore.memberPoint(authToken: autToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: merchantId, completion: { (MemberPointResponse) in
+    if LoginResponse.abstractResponse?.responseStatus == "INQ000" {
+        //success, do something
+    }else{
+        //failed
+    }
+}) { (Error) in
+     //error
+}
+```
+
+## Member Profile
+
+This member point is done by calling Goodie.memberProfile() function. This function will retrieve based on the memberId, merchantId. Here is example:
+
+```
+GoodieCore.memberProfile(authToken: authToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: merchantId, completion: { (MemberProfileResponse) in
+    if LoginResponse.abstractResponse?.responseStatus == "INQ000" {
+        //success, do something
+    }else{
+        //failed
+    }
+}) { (Error) in
+    //error
+}
+```
+
 
 
 ## Author
