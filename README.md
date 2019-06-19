@@ -57,6 +57,23 @@ Then, run the following command:
 $ pod install
 ```
 
+## Authentication
+
+This login is done by calling GoodieCore.login() function. This function will retrieve based on the deviceUniqueId, username, password, merchantCode. 
+Here is example:
+
+```
+GoodieCore.login(deviceUniqueId: deviceId, username: username, password: password, merchantCode: merchantCode, completion: { (LoginResponse) in
+    if LoginResponse.abstractResponse?.responseStatus == "AUTH000" {
+        //success, do something
+    }else{
+        //failed
+    }
+}) { (Error) in 
+    //error
+}
+```
+
 
 ## Author
 
