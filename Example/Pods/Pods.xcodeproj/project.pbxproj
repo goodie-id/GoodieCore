@@ -28,6 +28,48 @@
 		74A4FC3D22B9F1580008BF97 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC3C22B9F1580008BF97 /* RegisterRequest.swift */; };
 		74A4FC3F22B9F1730008BF97 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC3E22B9F1730008BF97 /* RegisterResponse.swift */; };
 		74A4FC4122B9F1950008BF97 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC4022B9F1950008BF97 /* RegisterViewModel.swift */; };
+		74A4FC4322B9F41D0008BF97 /* BasicRulesReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC4222B9F41D0008BF97 /* BasicRulesReq.swift */; };
+		74A4FC4522B9F4360008BF97 /* PromoInqBasicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC4422B9F4360008BF97 /* PromoInqBasicRequest.swift */; };
+		74A4FC4722B9F4580008BF97 /* ChangePasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC4622B9F4580008BF97 /* ChangePasswordRequest.swift */; };
+		74A4FC4922B9F4790008BF97 /* VoucherUsageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC4822B9F4790008BF97 /* VoucherUsageRequest.swift */; };
+		74A4FC4B22B9F49B0008BF97 /* RewardReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC4A22B9F49B0008BF97 /* RewardReq.swift */; };
+		74A4FC4D22B9F4B40008BF97 /* RewardRedeemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC4C22B9F4B40008BF97 /* RewardRedeemRequest.swift */; };
+		74A4FC4F22B9F4CC0008BF97 /* UpdateMemberProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC4E22B9F4CC0008BF97 /* UpdateMemberProfileRequest.swift */; };
+		74A4FC5122B9F4E20008BF97 /* CustomRulesReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC5022B9F4E20008BF97 /* CustomRulesReq.swift */; };
+		74A4FC5322B9F5000008BF97 /* PromoInqCustomIssuingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC5222B9F5000008BF97 /* PromoInqCustomIssuingRequest.swift */; };
+		74A4FC5522B9F5160008BF97 /* PromoInqCustomByAmountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC5422B9F5160008BF97 /* PromoInqCustomByAmountRequest.swift */; };
+		74A4FC5722B9F5320008BF97 /* VerificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC5622B9F5320008BF97 /* VerificationRequest.swift */; };
+		74A4FC5922B9F57D0008BF97 /* CustomRulePointResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC5822B9F57D0008BF97 /* CustomRulePointResp.swift */; };
+		74A4FC5B22B9F59A0008BF97 /* PromotionNumberIssueResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC5A22B9F59A0008BF97 /* PromotionNumberIssueResp.swift */; };
+		74A4FC5D22B9F5B40008BF97 /* PromoInqBasicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC5C22B9F5B40008BF97 /* PromoInqBasicResponse.swift */; };
+		74A4FC5F22B9F5CD0008BF97 /* RecordInfoResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC5E22B9F5CD0008BF97 /* RecordInfoResp.swift */; };
+		74A4FC6122B9F5E20008BF97 /* VoucherBalanceResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC6022B9F5E20008BF97 /* VoucherBalanceResp.swift */; };
+		74A4FC6322B9F5FD0008BF97 /* VoucherBalanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC6222B9F5FD0008BF97 /* VoucherBalanceResponse.swift */; };
+		74A4FC6522B9F6140008BF97 /* RewardObjResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC6422B9F6140008BF97 /* RewardObjResp.swift */; };
+		74A4FC6722B9F62A0008BF97 /* RewardListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC6622B9F62A0008BF97 /* RewardListResponse.swift */; };
+		74A4FC6922B9F6450008BF97 /* ChangePasswordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC6822B9F6440008BF97 /* ChangePasswordResponse.swift */; };
+		74A4FC6B22B9F6590008BF97 /* VoucherUsageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC6A22B9F6590008BF97 /* VoucherUsageResponse.swift */; };
+		74A4FC6D22B9F66D0008BF97 /* VoucherRedeemResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC6C22B9F66D0008BF97 /* VoucherRedeemResp.swift */; };
+		74A4FC6F22B9F6890008BF97 /* DetailRewardRedeemResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC6E22B9F6890008BF97 /* DetailRewardRedeemResp.swift */; };
+		74A4FC7122B9F69A0008BF97 /* RewardRedemptionResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC7022B9F69A0008BF97 /* RewardRedemptionResp.swift */; };
+		74A4FC7322B9F6AE0008BF97 /* RewardRedemptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC7222B9F6AE0008BF97 /* RewardRedemptionResponse.swift */; };
+		74A4FC7522B9F6C30008BF97 /* UpdateMemberProfileResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC7422B9F6C30008BF97 /* UpdateMemberProfileResp.swift */; };
+		74A4FC7722B9F6D90008BF97 /* UpdateMemberProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC7622B9F6D90008BF97 /* UpdateMemberProfileResponse.swift */; };
+		74A4FC7922B9F6F30008BF97 /* RedeemResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC7822B9F6F30008BF97 /* RedeemResp.swift */; };
+		74A4FC7D22B9F71D0008BF97 /* PointTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC7C22B9F71D0008BF97 /* PointTransaction.swift */; };
+		74A4FC7F22B9F7340008BF97 /* IssuingResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC7E22B9F7340008BF97 /* IssuingResp.swift */; };
+		74A4FC8122B9F7490008BF97 /* ListPointTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC8022B9F7490008BF97 /* ListPointTransactionResponse.swift */; };
+		74A4FC8322B9F75C0008BF97 /* VerificationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC8222B9F75C0008BF97 /* VerificationResponse.swift */; };
+		74A4FC8522BA08860008BF97 /* PromoInquiryBasicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC8422BA08860008BF97 /* PromoInquiryBasicViewModel.swift */; };
+		74A4FC8722BA08A80008BF97 /* VoucherBalanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC8622BA08A80008BF97 /* VoucherBalanceViewModel.swift */; };
+		74A4FC8922BA08C30008BF97 /* RewardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC8822BA08C30008BF97 /* RewardListViewModel.swift */; };
+		74A4FC8B22BA08E00008BF97 /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC8A22BA08E00008BF97 /* ChangePasswordViewModel.swift */; };
+		74A4FC8D22BA08F80008BF97 /* VoucherUsageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC8C22BA08F80008BF97 /* VoucherUsageViewModel.swift */; };
+		74A4FC8F22BA090E0008BF97 /* RewardReedemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC8E22BA090E0008BF97 /* RewardReedemViewModel.swift */; };
+		74A4FC9122BA09280008BF97 /* UpdateProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC9022BA09280008BF97 /* UpdateProfileViewModel.swift */; };
+		74A4FC9322BA093E0008BF97 /* ListHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC9222BA093E0008BF97 /* ListHistoryViewModel.swift */; };
+		74A4FC9522BA09540008BF97 /* PromoPostingBasicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC9422BA09540008BF97 /* PromoPostingBasicViewModel.swift */; };
+		74A4FC9722BA096A0008BF97 /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FC9622BA096A0008BF97 /* VerificationViewModel.swift */; };
 		7A3FA336A8B1E17A0C46C47B21968D0A /* GoodieCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B08A857F549E25E56E8CA40BF538474 /* GoodieCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		877EC3BD20D606F0F547E1947711B11F /* Pods-GoodieCore_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC12019B50FC48A7C8EFE39547641CFA /* Pods-GoodieCore_Tests-dummy.m */; };
 		AABA367670DAE3CC52EA2326313B655F /* Pods-GoodieCore_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED0A82F5B535B1A5441B3555F26253A0 /* Pods-GoodieCore_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -90,6 +132,48 @@
 		74A4FC3C22B9F1580008BF97 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
 		74A4FC3E22B9F1730008BF97 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
 		74A4FC4022B9F1950008BF97 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		74A4FC4222B9F41D0008BF97 /* BasicRulesReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRulesReq.swift; sourceTree = "<group>"; };
+		74A4FC4422B9F4360008BF97 /* PromoInqBasicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoInqBasicRequest.swift; sourceTree = "<group>"; };
+		74A4FC4622B9F4580008BF97 /* ChangePasswordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordRequest.swift; sourceTree = "<group>"; };
+		74A4FC4822B9F4790008BF97 /* VoucherUsageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherUsageRequest.swift; sourceTree = "<group>"; };
+		74A4FC4A22B9F49B0008BF97 /* RewardReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardReq.swift; sourceTree = "<group>"; };
+		74A4FC4C22B9F4B40008BF97 /* RewardRedeemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardRedeemRequest.swift; sourceTree = "<group>"; };
+		74A4FC4E22B9F4CC0008BF97 /* UpdateMemberProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMemberProfileRequest.swift; sourceTree = "<group>"; };
+		74A4FC5022B9F4E20008BF97 /* CustomRulesReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRulesReq.swift; sourceTree = "<group>"; };
+		74A4FC5222B9F5000008BF97 /* PromoInqCustomIssuingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoInqCustomIssuingRequest.swift; sourceTree = "<group>"; };
+		74A4FC5422B9F5160008BF97 /* PromoInqCustomByAmountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoInqCustomByAmountRequest.swift; sourceTree = "<group>"; };
+		74A4FC5622B9F5320008BF97 /* VerificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationRequest.swift; sourceTree = "<group>"; };
+		74A4FC5822B9F57D0008BF97 /* CustomRulePointResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRulePointResp.swift; sourceTree = "<group>"; };
+		74A4FC5A22B9F59A0008BF97 /* PromotionNumberIssueResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionNumberIssueResp.swift; sourceTree = "<group>"; };
+		74A4FC5C22B9F5B40008BF97 /* PromoInqBasicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoInqBasicResponse.swift; sourceTree = "<group>"; };
+		74A4FC5E22B9F5CD0008BF97 /* RecordInfoResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordInfoResp.swift; sourceTree = "<group>"; };
+		74A4FC6022B9F5E20008BF97 /* VoucherBalanceResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherBalanceResp.swift; sourceTree = "<group>"; };
+		74A4FC6222B9F5FD0008BF97 /* VoucherBalanceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherBalanceResponse.swift; sourceTree = "<group>"; };
+		74A4FC6422B9F6140008BF97 /* RewardObjResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardObjResp.swift; sourceTree = "<group>"; };
+		74A4FC6622B9F62A0008BF97 /* RewardListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListResponse.swift; sourceTree = "<group>"; };
+		74A4FC6822B9F6440008BF97 /* ChangePasswordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordResponse.swift; sourceTree = "<group>"; };
+		74A4FC6A22B9F6590008BF97 /* VoucherUsageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherUsageResponse.swift; sourceTree = "<group>"; };
+		74A4FC6C22B9F66D0008BF97 /* VoucherRedeemResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherRedeemResp.swift; sourceTree = "<group>"; };
+		74A4FC6E22B9F6890008BF97 /* DetailRewardRedeemResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRewardRedeemResp.swift; sourceTree = "<group>"; };
+		74A4FC7022B9F69A0008BF97 /* RewardRedemptionResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardRedemptionResp.swift; sourceTree = "<group>"; };
+		74A4FC7222B9F6AE0008BF97 /* RewardRedemptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardRedemptionResponse.swift; sourceTree = "<group>"; };
+		74A4FC7422B9F6C30008BF97 /* UpdateMemberProfileResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMemberProfileResp.swift; sourceTree = "<group>"; };
+		74A4FC7622B9F6D90008BF97 /* UpdateMemberProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMemberProfileResponse.swift; sourceTree = "<group>"; };
+		74A4FC7822B9F6F30008BF97 /* RedeemResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemResp.swift; sourceTree = "<group>"; };
+		74A4FC7C22B9F71D0008BF97 /* PointTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointTransaction.swift; sourceTree = "<group>"; };
+		74A4FC7E22B9F7340008BF97 /* IssuingResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuingResp.swift; sourceTree = "<group>"; };
+		74A4FC8022B9F7490008BF97 /* ListPointTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPointTransactionResponse.swift; sourceTree = "<group>"; };
+		74A4FC8222B9F75C0008BF97 /* VerificationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationResponse.swift; sourceTree = "<group>"; };
+		74A4FC8422BA08860008BF97 /* PromoInquiryBasicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoInquiryBasicViewModel.swift; sourceTree = "<group>"; };
+		74A4FC8622BA08A80008BF97 /* VoucherBalanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherBalanceViewModel.swift; sourceTree = "<group>"; };
+		74A4FC8822BA08C30008BF97 /* RewardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListViewModel.swift; sourceTree = "<group>"; };
+		74A4FC8A22BA08E00008BF97 /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		74A4FC8C22BA08F80008BF97 /* VoucherUsageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherUsageViewModel.swift; sourceTree = "<group>"; };
+		74A4FC8E22BA090E0008BF97 /* RewardReedemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardReedemViewModel.swift; sourceTree = "<group>"; };
+		74A4FC9022BA09280008BF97 /* UpdateProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewModel.swift; sourceTree = "<group>"; };
+		74A4FC9222BA093E0008BF97 /* ListHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHistoryViewModel.swift; sourceTree = "<group>"; };
+		74A4FC9422BA09540008BF97 /* PromoPostingBasicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoPostingBasicViewModel.swift; sourceTree = "<group>"; };
+		74A4FC9622BA096A0008BF97 /* VerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewModel.swift; sourceTree = "<group>"; };
 		846925CA244BE7319ACD6C604E2B9BF5 /* GoodieCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoodieCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FDF56CD53494D44723D8C08D76C873 /* Pods-GoodieCore_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoodieCore_Tests.modulemap"; sourceTree = "<group>"; };
 		9AB1A28CD91C701E99250863996F21C4 /* Pods-GoodieCore_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoodieCore_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -214,6 +298,27 @@
 				74A4FC3422B9EFB90008BF97 /* MemberPointResponse.swift */,
 				74A4FC3822B9F0AF0008BF97 /* MemberProfileResponse.swift */,
 				74A4FC3E22B9F1730008BF97 /* RegisterResponse.swift */,
+				74A4FC5822B9F57D0008BF97 /* CustomRulePointResp.swift */,
+				74A4FC5A22B9F59A0008BF97 /* PromotionNumberIssueResp.swift */,
+				74A4FC5C22B9F5B40008BF97 /* PromoInqBasicResponse.swift */,
+				74A4FC5E22B9F5CD0008BF97 /* RecordInfoResp.swift */,
+				74A4FC6022B9F5E20008BF97 /* VoucherBalanceResp.swift */,
+				74A4FC6222B9F5FD0008BF97 /* VoucherBalanceResponse.swift */,
+				74A4FC6422B9F6140008BF97 /* RewardObjResp.swift */,
+				74A4FC6622B9F62A0008BF97 /* RewardListResponse.swift */,
+				74A4FC6822B9F6440008BF97 /* ChangePasswordResponse.swift */,
+				74A4FC6A22B9F6590008BF97 /* VoucherUsageResponse.swift */,
+				74A4FC6C22B9F66D0008BF97 /* VoucherRedeemResp.swift */,
+				74A4FC6E22B9F6890008BF97 /* DetailRewardRedeemResp.swift */,
+				74A4FC7022B9F69A0008BF97 /* RewardRedemptionResp.swift */,
+				74A4FC7222B9F6AE0008BF97 /* RewardRedemptionResponse.swift */,
+				74A4FC7422B9F6C30008BF97 /* UpdateMemberProfileResp.swift */,
+				74A4FC7622B9F6D90008BF97 /* UpdateMemberProfileResponse.swift */,
+				74A4FC7822B9F6F30008BF97 /* RedeemResp.swift */,
+				74A4FC7C22B9F71D0008BF97 /* PointTransaction.swift */,
+				74A4FC7E22B9F7340008BF97 /* IssuingResp.swift */,
+				74A4FC8022B9F7490008BF97 /* ListPointTransactionResponse.swift */,
+				74A4FC8222B9F75C0008BF97 /* VerificationResponse.swift */,
 			);
 			path = Resp;
 			sourceTree = "<group>";
@@ -224,6 +329,17 @@
 				74A4FC2222B9E4760008BF97 /* LoginRequest.swift */,
 				74A4FC3222B9EF960008BF97 /* MemberPointRequest.swift */,
 				74A4FC3C22B9F1580008BF97 /* RegisterRequest.swift */,
+				74A4FC4222B9F41D0008BF97 /* BasicRulesReq.swift */,
+				74A4FC4422B9F4360008BF97 /* PromoInqBasicRequest.swift */,
+				74A4FC4622B9F4580008BF97 /* ChangePasswordRequest.swift */,
+				74A4FC4822B9F4790008BF97 /* VoucherUsageRequest.swift */,
+				74A4FC4A22B9F49B0008BF97 /* RewardReq.swift */,
+				74A4FC4C22B9F4B40008BF97 /* RewardRedeemRequest.swift */,
+				74A4FC4E22B9F4CC0008BF97 /* UpdateMemberProfileRequest.swift */,
+				74A4FC5022B9F4E20008BF97 /* CustomRulesReq.swift */,
+				74A4FC5222B9F5000008BF97 /* PromoInqCustomIssuingRequest.swift */,
+				74A4FC5422B9F5160008BF97 /* PromoInqCustomByAmountRequest.swift */,
+				74A4FC5622B9F5320008BF97 /* VerificationRequest.swift */,
 			);
 			path = Req;
 			sourceTree = "<group>";
@@ -254,6 +370,16 @@
 				74A4FC3622B9EFE60008BF97 /* MemberPointViewModel.swift */,
 				74A4FC3A22B9F0D70008BF97 /* MemberProfileViewModel.swift */,
 				74A4FC4022B9F1950008BF97 /* RegisterViewModel.swift */,
+				74A4FC8422BA08860008BF97 /* PromoInquiryBasicViewModel.swift */,
+				74A4FC8622BA08A80008BF97 /* VoucherBalanceViewModel.swift */,
+				74A4FC8822BA08C30008BF97 /* RewardListViewModel.swift */,
+				74A4FC8A22BA08E00008BF97 /* ChangePasswordViewModel.swift */,
+				74A4FC8C22BA08F80008BF97 /* VoucherUsageViewModel.swift */,
+				74A4FC8E22BA090E0008BF97 /* RewardReedemViewModel.swift */,
+				74A4FC9022BA09280008BF97 /* UpdateProfileViewModel.swift */,
+				74A4FC9222BA093E0008BF97 /* ListHistoryViewModel.swift */,
+				74A4FC9422BA09540008BF97 /* PromoPostingBasicViewModel.swift */,
+				74A4FC9622BA096A0008BF97 /* VerificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -474,23 +600,65 @@
 				74A4FC2522B9E4910008BF97 /* AbstractResponse.swift in Sources */,
 				74A4FC3B22B9F0D70008BF97 /* MemberProfileViewModel.swift in Sources */,
 				74A4FC3D22B9F1580008BF97 /* RegisterRequest.swift in Sources */,
+				74A4FC7122B9F69A0008BF97 /* RewardRedemptionResp.swift in Sources */,
+				74A4FC6122B9F5E20008BF97 /* VoucherBalanceResp.swift in Sources */,
 				74A4FC1F22B9E4400008BF97 /* Route.swift in Sources */,
+				74A4FC4B22B9F49B0008BF97 /* RewardReq.swift in Sources */,
+				74A4FC9722BA096A0008BF97 /* VerificationViewModel.swift in Sources */,
+				74A4FC5722B9F5320008BF97 /* VerificationRequest.swift in Sources */,
+				74A4FC8D22BA08F80008BF97 /* VoucherUsageViewModel.swift in Sources */,
+				74A4FC5D22B9F5B40008BF97 /* PromoInqBasicResponse.swift in Sources */,
 				367A8A31C7C64EEE3FD0C5FC1F07F7C2 /* GoodieCore-dummy.m in Sources */,
 				74A4FC2122B9E4530008BF97 /* Api.swift in Sources */,
+				74A4FC7D22B9F71D0008BF97 /* PointTransaction.swift in Sources */,
 				74A4FC2322B9E4760008BF97 /* LoginRequest.swift in Sources */,
+				74A4FC4722B9F4580008BF97 /* ChangePasswordRequest.swift in Sources */,
+				74A4FC4522B9F4360008BF97 /* PromoInqBasicRequest.swift in Sources */,
+				74A4FC5922B9F57D0008BF97 /* CustomRulePointResp.swift in Sources */,
 				74A4FC1D22B9E4230008BF97 /* Service.swift in Sources */,
+				74A4FC6922B9F6450008BF97 /* ChangePasswordResponse.swift in Sources */,
 				74A4FC2F22B9E5450008BF97 /* Global.swift in Sources */,
+				74A4FC6F22B9F6890008BF97 /* DetailRewardRedeemResp.swift in Sources */,
+				74A4FC6522B9F6140008BF97 /* RewardObjResp.swift in Sources */,
 				74A4FC3522B9EFB90008BF97 /* MemberPointResponse.swift in Sources */,
 				74A4FC3122B9E5580008BF97 /* GoodieCore.swift in Sources */,
+				74A4FC4322B9F41D0008BF97 /* BasicRulesReq.swift in Sources */,
+				74A4FC4922B9F4790008BF97 /* VoucherUsageRequest.swift in Sources */,
+				74A4FC5522B9F5160008BF97 /* PromoInqCustomByAmountRequest.swift in Sources */,
+				74A4FC7F22B9F7340008BF97 /* IssuingResp.swift in Sources */,
+				74A4FC8122B9F7490008BF97 /* ListPointTransactionResponse.swift in Sources */,
 				74A4FC4122B9F1950008BF97 /* RegisterViewModel.swift in Sources */,
+				74A4FC6B22B9F6590008BF97 /* VoucherUsageResponse.swift in Sources */,
+				74A4FC6322B9F5FD0008BF97 /* VoucherBalanceResponse.swift in Sources */,
 				74A4FC2D22B9E5290008BF97 /* Locator.swift in Sources */,
+				74A4FC6722B9F62A0008BF97 /* RewardListResponse.swift in Sources */,
+				74A4FC4D22B9F4B40008BF97 /* RewardRedeemRequest.swift in Sources */,
+				74A4FC8722BA08A80008BF97 /* VoucherBalanceViewModel.swift in Sources */,
+				74A4FC7322B9F6AE0008BF97 /* RewardRedemptionResponse.swift in Sources */,
+				74A4FC9122BA09280008BF97 /* UpdateProfileViewModel.swift in Sources */,
+				74A4FC9522BA09540008BF97 /* PromoPostingBasicViewModel.swift in Sources */,
+				74A4FC5B22B9F59A0008BF97 /* PromotionNumberIssueResp.swift in Sources */,
 				74A4FC2722B9E4A60008BF97 /* LoginResponse.swift in Sources */,
+				74A4FC7522B9F6C30008BF97 /* UpdateMemberProfileResp.swift in Sources */,
 				74A4FC2922B9E4CA0008BF97 /* ClientConnect.swift in Sources */,
+				74A4FC6D22B9F66D0008BF97 /* VoucherRedeemResp.swift in Sources */,
+				74A4FC9322BA093E0008BF97 /* ListHistoryViewModel.swift in Sources */,
+				74A4FC8522BA08860008BF97 /* PromoInquiryBasicViewModel.swift in Sources */,
+				74A4FC8922BA08C30008BF97 /* RewardListViewModel.swift in Sources */,
+				74A4FC5122B9F4E20008BF97 /* CustomRulesReq.swift in Sources */,
 				74A4FC3322B9EF960008BF97 /* MemberPointRequest.swift in Sources */,
+				74A4FC7922B9F6F30008BF97 /* RedeemResp.swift in Sources */,
+				74A4FC5322B9F5000008BF97 /* PromoInqCustomIssuingRequest.swift in Sources */,
 				74A4FC2B22B9E4FE0008BF97 /* LoginViewModel.swift in Sources */,
 				74A4FC3922B9F0AF0008BF97 /* MemberProfileResponse.swift in Sources */,
 				74A4FC3722B9EFE60008BF97 /* MemberPointViewModel.swift in Sources */,
+				74A4FC4F22B9F4CC0008BF97 /* UpdateMemberProfileRequest.swift in Sources */,
+				74A4FC5F22B9F5CD0008BF97 /* RecordInfoResp.swift in Sources */,
+				74A4FC8F22BA090E0008BF97 /* RewardReedemViewModel.swift in Sources */,
+				74A4FC7722B9F6D90008BF97 /* UpdateMemberProfileResponse.swift in Sources */,
+				74A4FC8B22BA08E00008BF97 /* ChangePasswordViewModel.swift in Sources */,
 				74A4FC3F22B9F1730008BF97 /* RegisterResponse.swift in Sources */,
+				74A4FC8322B9F75C0008BF97 /* VerificationResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
