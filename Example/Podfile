@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GoodieCore_Example' do
+  pod 'GoodieCore', :path => '../'
+
+  target 'GoodieCore_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

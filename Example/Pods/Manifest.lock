@@ -1,0 +1,16 @@
+PODS:
+  - GoodieCore (0.1.0)
+
+DEPENDENCIES:
+  - GoodieCore (from `../`)
+
+EXTERNAL SOURCES:
+  GoodieCore:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GoodieCore: 00b7a3f601e0be5a4558d6dbd44ae8b46ffb049e
+
+PODFILE CHECKSUM: 354a5570061aec775a03714e4acc7c3d88b92302
+
+COCOAPODS: 1.7.2

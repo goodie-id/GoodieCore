@@ -1,0 +1,6 @@
+framework module GoodieCore {
+  umbrella header "GoodieCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

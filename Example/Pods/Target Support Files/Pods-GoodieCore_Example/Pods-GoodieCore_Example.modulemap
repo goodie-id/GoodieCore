@@ -1,0 +1,6 @@
+framework module Pods_GoodieCore_Example {
+  umbrella header "Pods-GoodieCore_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
