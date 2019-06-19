@@ -1,0 +1,2 @@
+# GoodieCore
+sdk-ios
