@@ -17,8 +17,8 @@
 ## Feature
 
 - [x] Register
-- [x] Login
 - [x] Verification Member
+- [x] Login
 - [x] Member Point
 - [x] Member Profile
 - [x] Promotion Inquiry
@@ -117,7 +117,7 @@ This member point is done by calling Goodie.memberPoint() function. This functio
 
 ```
 GoodieCore.memberPoint(authToken: autToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: merchantId, completion: { (MemberPointResponse) in
-    if LoginResponse.abstractResponse?.responseStatus == "INQ000" {
+    if MemberPointResponse.abstractResponse?.responseStatus == "INQ000" {
         //success, do something
     }else{
         //failed
@@ -133,7 +133,7 @@ This member point is done by calling Goodie.memberProfile() function. This funct
 
 ```
 GoodieCore.memberProfile(authToken: authToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: merchantId, completion: { (MemberProfileResponse) in
-    if LoginResponse.abstractResponse?.responseStatus == "INQ000" {
+    if MemberProfileResponse.abstractResponse?.responseStatus == "INQ000" {
         //success, do something
     }else{
         //failed
@@ -143,6 +143,169 @@ GoodieCore.memberProfile(authToken: authToken, deviceUniqId: deviceUniqId, membe
 }
 ```
 
+## Promotion Inquiry basic
+
+This promotion inquiry basic is done by calling Goodie.setPromotionInquiryBasic() function. 
+Here is example:
+
+```
+GoodieCore.promotionInquiryBasic(authToken: authToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: merchantId, storeId: storeId, productCode: productCode, refNumber: refNumber, totalTrxAmount: totalTrxAmount, completion: { (PromoInqBasicResponse) in
+    if PromoInqBasicResponse.abstractResponse?.responseStatus == "INQ000" {
+        //success, do something
+    }else{
+        //failed
+    }
+}) { (Error) in
+
+}
+```
+
+
+## Promotion Posting basic
+
+This promotion postingbasic is done by calling Goodie.promotionPostingBasic() function. 
+Here is example:
+
+
+```
+GoodieCore.promotionPostingBasic(authToken: authToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: merchantId, storeId: storeId, productCode: productCode, refNumber: refNumber, totalTrxAmount: totalTrxAmount, completion: { (PromoInqBasicResponse) in
+    if PromoInqBasicResponse.abstractResponse?.responseStatus == "INQ000" {
+        //success, do something
+    }else{
+        //failed
+    }
+}) { (Error) in
+    //error
+}
+```
+
+## Reward List
+
+You can get list reward from goodie by calling Goodie.rewardList() function. And with this function you can use it to show reward detail. If you fill rewardId parameter with “Empty String”, function will retrieve all reward. And if you want to retrieves specific reward, you can fill rewardId parameter with specific id where you get the Id from previous reward list.
+Here is example:
+
+```
+GoodieCore.rewardList(authToken: authToken, deviceUniqueId: deviceUniqueId, keyword: keyword, rewardId: rewardId, memberId: memberId, merchantId: merchantId, orderBy: orderBy, orderType: orderType, nRecords: nRecords, page: page, completion: { (RewardListResponse) in
+    if RewardListResponse.abstractResponse?.responseStatus == "INQ000" {
+        //success, do something
+    }else{
+        //failed
+    }
+    }) { (Error) in
+        //error
+    }
+
+```
+
+
+## Reward Redeem
+
+This function Goodie.rewardList() is used for exchange points into rewards.
+Here is the example:
+
+
+```
+GoodieCore.reedemReward(authToken: authToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: StringmerchantId, listReward: [RewardReq], completion: { (RewardRedemptionResponse) in
+    if RewardListResponse.abstractResponse?.responseStatus == "RWRED000" {
+        //success, do something
+    }else{
+        //failed
+    }
+}, onError: { (Error) in
+    //error
+})
+```
+
+## List My Reward
+
+This function Goodie.voucherBalance() is used for showing all reward that you have. After you exchange rewards with points, it will show in here. 
+Here is the example:
+
+
+```
+GoodieCore.voucherBalance(authToken: authToken, deviceUniqueId: deviceUniqueId, voucherBalanceId: voucherBalanceId, memberId: memberId, merchantId: merchantId, orderBy: orderBy, orderType: orderType, nRecords: nRecords, page: page, completion: { (VoucherBalanceResponse) in
+    if VoucherBalanceResponse.abstractResponse?.responseStatus == "INQ000" {
+        //success, do something
+    }else{
+        //failed
+    }
+}) { (Error) in
+    //error
+}
+```
+
+## Redeem Voucher
+
+This function Goodie.voucherUsage() is used to redeem your reward (You can get reward from redeeming your points)
+Here is the example:
+
+```
+GoodieCore.voucherUsage(authToken: authToken, deviceUniqueId: deviceUniqueId, memberId: memberId, merchantId: merchantId, voucherBalanceId: voucherBalanceId, storeId: storeId, completion: { (VoucherUsageResponse) in
+    if VoucherUsageResponse.abstractResponse?.responseStatus == "INQ001" {
+        //success, do something
+    }else{
+        //failed
+    }
+}) { (Error) in
+    //error
+}
+```
+
+
+## Change Password
+
+You can change your existing password with your new password in Goodie system using this function.
+Here is the sample code:
+
+
+```
+GoodieCore.changePassword(authToken: authToken, deviceUniqueId: deviceUniqueId, passwordOld: passwordOld, newPassword: newPassword, confirmPassword: confirmPassword, memberId: memberId, merchantId: merchantId, username: username, completion: { (ChangePasswordResponse) in
+    if ChangePasswordResponse.abstractResponse?.responseStatus == "MEM902" {
+        //success, do something
+    }else{
+        //failed
+    }
+}) { (Error) in
+     //error
+}
+```
+
+
+## Update Member profile
+
+Goodie.updateMemberProfile() is used to Update profile in Goodie system, you can change your private information using this function.
+Here is the sample code:
+
+```
+GoodieCore.updateMemberProfile(authToken: authToken, deviceUniqueId: deviceUniqueId, memberId: memberId, merchantId: merchantId, birthDate: birthDate, firstName: firstName, lastName: lastName, gender: gender, phoneNumber: phoneNumber, completion: { (UpdateMemberProfileResponse) in
+    if UpdateMemberProfileResponse.abstractResponse?.responseStatus == "MEM000" {
+        //success, do something
+    }else{
+        //failed
+    }
+}) { (Error) in
+     //error
+}
+```
+
+
+## Point transaction History
+
+You can use Goodie.listHistory() function to track your issuing point history and Redeemed point history.
+Here is the sample code:
+
+
+```
+GoodieCore.listHistory(authToken: authToken, deviceUniqueId: deviceUniqueId, memberId: memberId, merchantId: merchantId, trxType: trxType, orderBy: orderBy, orderType: orderType, nRecord: nRecord, page: page, completion: { (ListPointTransactionResponse) in
+    if ListPointTransactionResponse.abstractResponse?.responseStatus == "TRX018" {
+        //success, do something
+    }else{
+        //failed
+    }
+}) { (Error) in
+    //error
+}
+```
 
 
 ## Author
