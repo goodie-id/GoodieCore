@@ -66,10 +66,11 @@ $ pod install
 ## Register Member
 
 This register is done by calling Goodie.register() function. This function will retrieve or create user.
+to do request You have to make a function to get 'deviceUniqueId' for your device (HP).
 Here is example:
 
 ```
-GoodieCore.register(username: "username", merchantId: "merchantId", phoneNumber: "phoneNumber", password: "password", firstName: "firstName", lastName: "lastName",   deviceUniqId: "deviceUniqId", birthDate: "birthDate", referralCode: "referralCode", completion: { (RegisterResponse) in
+GoodieCore.register(username: "username", merchantId: "merchantId", phoneNumber: "phoneNumber", password: "password", firstName: "firstName", lastName: "lastName",   deviceUniqueId: "deviceUniqueId", birthDate: "18-01-1992", referralCode: "referralCode", completion: { (RegisterResponse) in
     if RegisterResponse.abstractResponse?.responseStatus == "MEM000" {
         //success
     }else{
@@ -100,10 +101,11 @@ GoodieCore.verification(username: "username", merchantId: "merchantId", code: "v
 ## Authentication / Login
 
 This login is done by calling GoodieCore.login() function. This function will retrieve based on the deviceUniqueId, username, password, merchantCode. 
+You can get a merchant code when after the process login (login respose).
 Here is example:
 
 ```
-GoodieCore.login(deviceUniqueId: "deviceId", username: "username", password: "password", merchantCode: "merchantCode", completion: { (LoginResponse) in
+GoodieCore.login(deviceUniqueId: "deviceUniqueId", username: "username", password: "password", merchantCode: "merchantCode", completion: { (LoginResponse) in
     if LoginResponse.abstractResponse?.responseStatus == "AUTH000" {
         //success, do something
     }else{
