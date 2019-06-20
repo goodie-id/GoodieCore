@@ -1,8 +1,7 @@
 
-## GoodieCore
- Loyalthy system API for iOS
-
+## GoodieCore - `` - Loyalthy system API for iOS``
 Goodie Enable custom in-app loyalthy in your Mobile App and Web using Goodie Core SDK
+
 
 [![CI Status](https://img.shields.io/travis/shurahman/GoodieCore.svg?style=flat)](https://travis-ci.org/shurahman/GoodieCore)
 [![Version](https://img.shields.io/cocoapods/v/GoodieCore.svg?style=flat)](https://cocoapods.org/pods/GoodieCore)
@@ -83,7 +82,7 @@ GoodieCore.register(username: "username", merchantId: "merchantId", phoneNumber:
 
 ## Verification Member
 
-This verification is done by calling Goodie.setVerification() function. This function will retrieve based on the username, merchantId, verificationCode. 
+This verification is done by calling Goodie.verification() function. This function will retrieve based on the username, merchantId, verificationCode. In our backend system, we have a flag “isVerification” if you set this flag true, Users have to fill verification code to activate their account. (our backend system will send verification code by email or message) 
 Here is example:
 
 ```
@@ -100,8 +99,7 @@ GoodieCore.verification(username: "username", merchantId: "merchantId", code: "v
 
 ## Authentication / Login
 
-This login is done by calling GoodieCore.login() function. This function will retrieve based on the deviceUniqueId, username, password, merchantCode. 
-You can get a merchant code when after the process login (login respose).
+This login is done by calling Goodie.setLogin() function. This function will retrieve based on the deviceUniqueId, username, password, merchantCode. Login to Goodie System to access Goodie Feature.
 Here is example:
 
 ```
@@ -119,7 +117,9 @@ GoodieCore.login(deviceUniqueId: "deviceUniqueId", username: "username", passwor
 
 ## Member Point
 
-This member point is done by calling Goodie.memberPoint() function. This function will retrieve based on the memberId, merchantId. Here is example:
+This member point is done by calling Goodie.memberPoint() function. This function will retrieve based on the memberId, merchantId. You can see your point balance using this function (You can get points after making certain amount of transaction or from certain events).
+Here is example:
+
 
 ```
 GoodieCore.memberPoint(authToken: "autToken", deviceUniqId: "deviceUniqId", memberId: "memberId", merchantId: "merchantId", completion: { (MemberPointResponse) in
