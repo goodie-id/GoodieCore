@@ -81,14 +81,14 @@ Here is example:
 
 
 ```
-GoodieCore.register(username: username, merchantId: merchantId, phoneNumber: phoneNumber, password: password, firstName: firstName, lastName: lastName, deviceUniqId: deviceUniqId, birthDate: birthDate, referralCode: referralCode, completion: { (RegisterResponse) in
+GoodieCore.verification(username: username, merchantId: merchantId, code: code, completion: { (VerificationResponse) in
     if VerificationResponse.abstractResponse?.responseStatus == "MEM000" {
         //success
     }else{
         //failed
     }
 }) { (Error) in
-//error
+    //error
 }
 ```
 
@@ -127,9 +127,11 @@ GoodieCore.memberPoint(authToken: autToken, deviceUniqId: deviceUniqId, memberId
 }
 ```
 
+
 ## Member Profile
 
-This member point is done by calling Goodie.memberProfile() function. This function will retrieve based on the memberId, merchantId. Here is example:
+You can use this function to retrieve data member which is stored in Goodie system.
+Here is the example:
 
 ```
 GoodieCore.memberProfile(authToken: authToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: merchantId, completion: { (MemberProfileResponse) in
@@ -200,9 +202,8 @@ GoodieCore.rewardList(authToken: authToken, deviceUniqueId: deviceUniqueId, keyw
 
 ## Reward Redeem
 
-This function Goodie.rewardList() is used for exchange points into rewards.
+This function Goodie.reedemReward() is used for exchange points into rewards.
 Here is the example:
-
 
 ```
 GoodieCore.reedemReward(authToken: authToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: StringmerchantId, listReward: [RewardReq], completion: { (RewardRedemptionResponse) in
@@ -221,7 +222,6 @@ GoodieCore.reedemReward(authToken: authToken, deviceUniqId: deviceUniqId, member
 This function Goodie.voucherBalance() is used for showing all reward that you have. After you exchange rewards with points, it will show in here. 
 Here is the example:
 
-
 ```
 GoodieCore.voucherBalance(authToken: authToken, deviceUniqueId: deviceUniqueId, voucherBalanceId: voucherBalanceId, memberId: memberId, merchantId: merchantId, orderBy: orderBy, orderType: orderType, nRecords: nRecords, page: page, completion: { (VoucherBalanceResponse) in
     if VoucherBalanceResponse.abstractResponse?.responseStatus == "INQ000" {
@@ -236,7 +236,7 @@ GoodieCore.voucherBalance(authToken: authToken, deviceUniqueId: deviceUniqueId, 
 
 ## Redeem Voucher
 
-This function Goodie.voucherUsage() is used to redeem your reward (You can get reward from redeeming your points)
+This function Goodie.voucherUsage() is used to redeem your voucher (You can get voucher from redeeming your points)
 Here is the example:
 
 ```
