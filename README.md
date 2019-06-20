@@ -1,4 +1,5 @@
-##GoodieCore
+
+## GoodieCore
  Loyalthy system API for iOS
 
 Goodie Enable custom in-app loyalthy in your Mobile App and Web using Goodie Core SDK
@@ -83,7 +84,7 @@ This verification is done by calling Goodie.setVerification() function. This fun
 Here is example:
 
 ```
-GoodieCore.verification(username: "username", merchantId: "merchantId", code: "code", completion: { (VerificationResponse) in
+GoodieCore.verification(username: "username", merchantId: "merchantId", code: "verificationCode", completion: { (VerificationResponse) in
     if VerificationResponse.abstractResponse?.responseStatus == "MEM000" {
         //success
     }else{
@@ -196,7 +197,7 @@ orderType :
 3 = point
 4 = expired date
 
-nRecord = jumlah record
+nRecord = number of records
 
 GoodieCore.rewardList(authToken: "authToken", deviceUniqueId: "deviceUniqueId", keyword: "keyword", rewardId: "rewardId", memberId: "memberId", merchantId: "merchantId", orderBy: "1", orderType: "1", nRecords: "10", page: "0", completion: { (RewardListResponse) in
     if RewardListResponse.abstractResponse?.responseStatus == "INQ000" {
@@ -250,7 +251,7 @@ orderType :
 3 = point
 4 = expired date
 
-nRecord = jumlah record dalam string
+nRecord = number of records
 
 GoodieCore.voucherBalance(authToken: "authToken", deviceUniqueId: "deviceUniqueId", voucherBalanceId: "voucherBalanceId", memberId: "memberId", merchantId: "merchantId", orderBy: "1", orderType: "1", nRecords: "10", page: "0", completion: { (VoucherBalanceResponse) in
     if VoucherBalanceResponse.abstractResponse?.responseStatus == "INQ000" {
@@ -356,7 +357,7 @@ GoodieCore.listHistory(authToken: "authToken", deviceUniqueId: "deviceUniqueId",
 
 ## Author
 
-shurahman, goodiedev1@gmail.com
+Mr. Shu, goodiedev1@gmail.com
 
 ## License
 
