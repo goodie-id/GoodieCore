@@ -1,5 +1,5 @@
 
-## GoodieCore - `` - Loyalthy system API for iOS``
+## GoodieCore - ``Loyalthy API for iOS``
 Goodie Enable custom in-app loyalthy in your Mobile App and Web using Goodie Core SDK
 
 
@@ -150,7 +150,7 @@ GoodieCore.memberProfile(authToken: "authToken", deviceUniqId: "deviceUniqId", m
 }
 ```
 
-## Promotion Inquiry basic
+## Promotion Inquiry Basic
 
 This promotion inquiry basic is done by calling Goodie.setPromotionInquiryBasic() function. 
 Here is example:
@@ -168,7 +168,7 @@ GoodieCore.promotionInquiryBasic(authToken: "authToken", deviceUniqId: "deviceUn
 ```
 
 
-## Promotion Posting basic
+## Promotion Posting Basic
 
 This promotion postingbasic is done by calling Goodie.promotionPostingBasic() function. 
 Here is example:
@@ -305,7 +305,7 @@ GoodieCore.changePassword(authToken: "authToken", deviceUniqueId: "deviceUniqueI
 ```
 
 
-## Update Member profile
+## Update Member Profile
 
 Goodie.updateMemberProfile() is used to Update profile in Goodie system, you can change your private information using this function.
 Here is the sample code:
