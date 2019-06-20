@@ -27,13 +27,15 @@ Goodie Enable custom in-app loyalthy in your Mobile App and Web using Goodie Cor
 - [x] Member Profile
 - [x] Promotion Inquiry
 - [x] Promotion Posting
-- [x] Voucher Balance
-- [x] Voucher Redeem
 - [x] Reward List
 - [x] Reward Redeem
-- [x] List History
-- [x] Update Profile
+- [x] Voucher Balance
+- [x] Voucher Redeem
 - [x] Change Password
+- [x] Update Member Profile
+- [x] List History (Point Transaction History)
+
+
 
 ## Installation
 
