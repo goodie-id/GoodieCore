@@ -1,4 +1,4 @@
-```GoodieCore```   - Loyalthy system API for iOS
+```##GoodieCore```   - Loyalthy system API for iOS
 
 Goodie Enable custom in-app loyalthy in your Mobile App and Web using Goodie Core SDK
 
