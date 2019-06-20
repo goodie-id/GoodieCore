@@ -1,4 +1,5 @@
-```##GoodieCore```   - Loyalthy system API for iOS
+##GoodieCore
+ Loyalthy system API for iOS
 
 Goodie Enable custom in-app loyalthy in your Mobile App and Web using Goodie Core SDK
 
@@ -65,7 +66,7 @@ This register is done by calling Goodie.register() function. This function will 
 Here is example:
 
 ```
-GoodieCore.register(username: username, merchantId: merchantId, phoneNumber: phoneNumber, password: password, firstName: firstName, lastName: lastName, deviceUniqId: deviceUniqId, birthDate: birthDate, referralCode: referralCode, completion: { (RegisterResponse) in
+GoodieCore.register(username: "username", merchantId: "merchantId", phoneNumber: "phoneNumber", password: "password", firstName: "firstName", lastName: "lastName",   deviceUniqId: "deviceUniqId", birthDate: "birthDate", referralCode: "referralCode", completion: { (RegisterResponse) in
     if RegisterResponse.abstractResponse?.responseStatus == "MEM000" {
         //success
     }else{
@@ -81,9 +82,8 @@ GoodieCore.register(username: username, merchantId: merchantId, phoneNumber: pho
 This verification is done by calling Goodie.setVerification() function. This function will retrieve based on the username, merchantId, verificationCode. 
 Here is example:
 
-
 ```
-GoodieCore.verification(username: username, merchantId: merchantId, code: code, completion: { (VerificationResponse) in
+GoodieCore.verification(username: "username", merchantId: "merchantId", code: "code", completion: { (VerificationResponse) in
     if VerificationResponse.abstractResponse?.responseStatus == "MEM000" {
         //success
     }else{
@@ -94,14 +94,13 @@ GoodieCore.verification(username: username, merchantId: merchantId, code: code, 
 }
 ```
 
-
 ## Authentication / Login
 
 This login is done by calling GoodieCore.login() function. This function will retrieve based on the deviceUniqueId, username, password, merchantCode. 
 Here is example:
 
 ```
-GoodieCore.login(deviceUniqueId: deviceId, username: username, password: password, merchantCode: merchantCode, completion: { (LoginResponse) in
+GoodieCore.login(deviceUniqueId: "deviceId", username: "username", password: "password", merchantCode: "merchantCode", completion: { (LoginResponse) in
     if LoginResponse.abstractResponse?.responseStatus == "AUTH000" {
         //success, do something
     }else{
@@ -118,7 +117,7 @@ GoodieCore.login(deviceUniqueId: deviceId, username: username, password: passwor
 This member point is done by calling Goodie.memberPoint() function. This function will retrieve based on the memberId, merchantId. Here is example:
 
 ```
-GoodieCore.memberPoint(authToken: autToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: merchantId, completion: { (MemberPointResponse) in
+GoodieCore.memberPoint(authToken: "autToken", deviceUniqId: "deviceUniqId", memberId: "memberId", merchantId: "merchantId", completion: { (MemberPointResponse) in
     if MemberPointResponse.abstractResponse?.responseStatus == "INQ000" {
         //success, do something
     }else{
@@ -129,14 +128,13 @@ GoodieCore.memberPoint(authToken: autToken, deviceUniqId: deviceUniqId, memberId
 }
 ```
 
-
 ## Member Profile
 
 You can use this function to retrieve data member which is stored in Goodie system.
 Here is the example:
 
 ```
-GoodieCore.memberProfile(authToken: authToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: merchantId, completion: { (MemberProfileResponse) in
+GoodieCore.memberProfile(authToken: "authToken", deviceUniqId: "deviceUniqId", memberId: "memberId", merchantId: "merchantId", completion: { (MemberProfileResponse) in
     if MemberProfileResponse.abstractResponse?.responseStatus == "INQ000" {
         //success, do something
     }else{
@@ -153,7 +151,7 @@ This promotion inquiry basic is done by calling Goodie.setPromotionInquiryBasic(
 Here is example:
 
 ```
-GoodieCore.promotionInquiryBasic(authToken: authToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: merchantId, storeId: storeId, productCode: productCode, refNumber: refNumber, totalTrxAmount: totalTrxAmount, completion: { (PromoInqBasicResponse) in
+GoodieCore.promotionInquiryBasic(authToken: "authToken", deviceUniqId: "deviceUniqId", memberId: "memberId", merchantId: "merchantId", storeId: "storeId", productCode: "productCode", refNumber: "refNumber", totalTrxAmount: 10000, completion: { (PromoInqBasicResponse) in
     if PromoInqBasicResponse.abstractResponse?.responseStatus == "INQ000" {
         //success, do something
     }else{
@@ -170,9 +168,8 @@ GoodieCore.promotionInquiryBasic(authToken: authToken, deviceUniqId: deviceUniqI
 This promotion postingbasic is done by calling Goodie.promotionPostingBasic() function. 
 Here is example:
 
-
 ```
-GoodieCore.promotionPostingBasic(authToken: authToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: merchantId, storeId: storeId, productCode: productCode, refNumber: refNumber, totalTrxAmount: totalTrxAmount, completion: { (PromoInqBasicResponse) in
+GoodieCore.promotionPostingBasic(authToken: "authToken", deviceUniqId: "deviceUniqId", memberId: "memberId", merchantId: "merchantId", storeId: "storeId", productCode: "productCode", refNumber: "refNumber", totalTrxAmount: 100000, completion: { (PromoInqBasicResponse) in
     if PromoInqBasicResponse.abstractResponse?.responseStatus == "INQ000" {
         //success, do something
     }else{
@@ -189,7 +186,19 @@ You can get list reward from goodie by calling Goodie.rewardList() function. And
 Here is example:
 
 ```
-GoodieCore.rewardList(authToken: authToken, deviceUniqueId: deviceUniqueId, keyword: keyword, rewardId: rewardId, memberId: memberId, merchantId: merchantId, orderBy: orderBy, orderType: orderType, nRecords: nRecords, page: page, completion: { (RewardListResponse) in
+orderBy : 
+1 = ascending
+2 = descending
+
+orderType :
+1 = reward
+2 = product
+3 = point
+4 = expired date
+
+nRecord = jumlah record
+
+GoodieCore.rewardList(authToken: "authToken", deviceUniqueId: "deviceUniqueId", keyword: "keyword", rewardId: "rewardId", memberId: "memberId", merchantId: "merchantId", orderBy: "1", orderType: "1", nRecords: "10", page: "0", completion: { (RewardListResponse) in
     if RewardListResponse.abstractResponse?.responseStatus == "INQ000" {
         //success, do something
     }else{
@@ -207,8 +216,14 @@ GoodieCore.rewardList(authToken: authToken, deviceUniqueId: deviceUniqueId, keyw
 This function Goodie.reedemReward() is used for exchange points into rewards.
 Here is the example:
 
+
 ```
-GoodieCore.reedemReward(authToken: authToken, deviceUniqId: deviceUniqId, memberId: memberId, merchantId: StringmerchantId, listReward: [RewardReq], completion: { (RewardRedemptionResponse) in
+let rewardReqs = RewardReq()
+rewardReqs.rewardId = "rewardId"
+rewardReqs.quantity = 1
+var listReward = [rewardReqs]
+
+GoodieCore.reedemReward(authToken: "authToken", deviceUniqId: "deviceUniqId", memberId: "memberId", merchantId: "merchantId", listReward: [RewardReq], completion: { (RewardRedemptionResponse) in
     if RewardListResponse.abstractResponse?.responseStatus == "RWRED000" {
         //success, do something
     }else{
@@ -225,7 +240,19 @@ This function Goodie.voucherBalance() is used for showing all reward that you ha
 Here is the example:
 
 ```
-GoodieCore.voucherBalance(authToken: authToken, deviceUniqueId: deviceUniqueId, voucherBalanceId: voucherBalanceId, memberId: memberId, merchantId: merchantId, orderBy: orderBy, orderType: orderType, nRecords: nRecords, page: page, completion: { (VoucherBalanceResponse) in
+orderBy : 
+1 = ascending
+2 = descending
+
+orderType :
+1 = reward
+2 = product
+3 = point
+4 = expired date
+
+nRecord = jumlah record dalam string
+
+GoodieCore.voucherBalance(authToken: "authToken", deviceUniqueId: "deviceUniqueId", voucherBalanceId: "voucherBalanceId", memberId: "memberId", merchantId: "merchantId", orderBy: "1", orderType: "1", nRecords: "10", page: "0", completion: { (VoucherBalanceResponse) in
     if VoucherBalanceResponse.abstractResponse?.responseStatus == "INQ000" {
         //success, do something
     }else{
@@ -242,7 +269,7 @@ This function Goodie.voucherUsage() is used to redeem your voucher (You can get 
 Here is the example:
 
 ```
-GoodieCore.voucherUsage(authToken: authToken, deviceUniqueId: deviceUniqueId, memberId: memberId, merchantId: merchantId, voucherBalanceId: voucherBalanceId, storeId: storeId, completion: { (VoucherUsageResponse) in
+GoodieCore.voucherUsage(authToken: "authToken", deviceUniqueId: "deviceUniqueId", memberId: "memberId", merchantId: "merchantId", voucherBalanceId: "voucherBalanceId", storeId: "storeId", completion: { (VoucherUsageResponse) in
     if VoucherUsageResponse.abstractResponse?.responseStatus == "INQ001" {
         //success, do something
     }else{
@@ -261,7 +288,7 @@ Here is the sample code:
 
 
 ```
-GoodieCore.changePassword(authToken: authToken, deviceUniqueId: deviceUniqueId, passwordOld: passwordOld, newPassword: newPassword, confirmPassword: confirmPassword, memberId: memberId, merchantId: merchantId, username: username, completion: { (ChangePasswordResponse) in
+GoodieCore.changePassword(authToken: "authToken", deviceUniqueId: "deviceUniqueId", passwordOld: "passwordOld", newPassword: "newPassword", confirmPassword: "confirmPassword", memberId: "memberId", merchantId: "merchantId", username: "username", completion: { (ChangePasswordResponse) in
     if ChangePasswordResponse.abstractResponse?.responseStatus == "MEM902" {
         //success, do something
     }else{
@@ -279,7 +306,7 @@ Goodie.updateMemberProfile() is used to Update profile in Goodie system, you can
 Here is the sample code:
 
 ```
-GoodieCore.updateMemberProfile(authToken: authToken, deviceUniqueId: deviceUniqueId, memberId: memberId, merchantId: merchantId, birthDate: birthDate, firstName: firstName, lastName: lastName, gender: gender, phoneNumber: phoneNumber, completion: { (UpdateMemberProfileResponse) in
+GoodieCore.updateMemberProfile(authToken: "authToken", deviceUniqueId: "deviceUniqueId", memberId: "memberId", merchantId: "merchantId", birthDate: "birthDate", firstName: "firstName", lastName: "lastName", gender: "gender", phoneNumber: "phoneNumber", completion: { (UpdateMemberProfileResponse) in
     if UpdateMemberProfileResponse.abstractResponse?.responseStatus == "MEM000" {
         //success, do something
     }else{
@@ -298,7 +325,24 @@ Here is the sample code:
 
 
 ```
-GoodieCore.listHistory(authToken: authToken, deviceUniqueId: deviceUniqueId, memberId: memberId, merchantId: merchantId, trxType: trxType, orderBy: orderBy, orderType: orderType, nRecord: nRecord, page: page, completion: { (ListPointTransactionResponse) in
+orderBy : 
+1 = ascending
+2 = descending
+
+orderType :
+1 = reward
+2 = product
+3 = point
+4 = expired date
+
+trxType : 
+0 = It’s mean all data will retrieve (Issuing and Redeemed)
+1 = It will retrieve only Issuing data history
+2 = It will retrieve only Redeemed data history
+
+nRecord = jumlah record dalam string
+
+GoodieCore.listHistory(authToken: "authToken", deviceUniqueId: "deviceUniqueId", memberId: "memberId", merchantId: "merchantId", trxType: "1", orderBy: "1", orderType: "1", nRecord: "10", page: "0", completion: { (ListPointTransactionResponse) in
     if ListPointTransactionResponse.abstractResponse?.responseStatus == "TRX018" {
         //success, do something
     }else{
