@@ -26,7 +26,7 @@ class ListHistoryViewModel {
             }
             
             self.listPointTransRes = result!
-            if self.listPointTransRes?.abstractResponse?.responseStatus == "INQ000"{
+            if self.listPointTransRes?.abstractResponse?.responseStatus == "TRX018"{
                 completion(result!)
             }else{
                 completion(result!)

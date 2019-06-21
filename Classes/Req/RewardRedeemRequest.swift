@@ -11,6 +11,6 @@ struct RewardRedeemRequest: Codable {
     
     var memberId: String
     var merchantId: String
-    var rewards: [RewardReq]?
+    var rewards: [RewardReq]
     
 }

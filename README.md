@@ -209,9 +209,9 @@ GoodieCore.rewardList(authToken: "authToken", deviceUniqueId: "deviceUniqueId", 
     }else{
         //failed
     }
-    }) { (Error) in
-        //error
-    }
+}) { (Error) in
+    //error
+}
 
 ```
 
