@@ -137,9 +137,9 @@ public class GoodieCore: NSObject {
     
     
     
-    public class func reedemReward(authToken: String, deviceUniqId: String, memberId: String, merchantId: String,  listReward: [RewardReq], completion: @escaping(RewardRedemptionResponse) -> Void, onError: @escaping(Error) -> Void){
-        
-        let reedemRewardReq = RewardRedeemRequest(memberId: memberId, merchantId: merchantId, rewards:listReward)
+    public class func reedemReward(authToken: String, deviceUniqId: String, memberId: String, merchantId: String,  rewardId : String, quantity : Int, completion: @escaping(RewardRedemptionResponse) -> Void, onError: @escaping(Error) -> Void){
+        let reward = RewardReq(rewardId: rewardId, quantity: quantity)
+        let reedemRewardReq = RewardRedeemRequest(memberId: memberId, merchantId: merchantId, rewards:[reward])
         let vm = Global.locator.redeemReward
         vm.doRewardReedem(authToken: authToken, deviceUniqueId: deviceUniqId, request: reedemRewardReq, completion: { (res:RewardRedemptionResponse) in
             completion(res)

@@ -7,9 +7,9 @@
 
 import Foundation
 
-public struct RewardReq: Codable {
+struct RewardReq: Codable {
     
-    public var rewardId: String
-    public var quantity: Int
+    var rewardId: String
+    var quantity: Int
     
 }
