@@ -218,25 +218,22 @@ GoodieCore.rewardList(authToken: "authToken", deviceUniqueId: "deviceUniqueId", 
 
 ## Reward Redeem
 
-This function Goodie.reedemReward() is used for exchange points into rewards.
+This function Goodie.reedemReward() is used for exchange points into rewards. you can get rewardId while get response from rewardList function.
 Here is the example:
 
 
 ```
-let rewardReqs = RewardReq()
-rewardReqs.rewardId = "rewardId"
-rewardReqs.quantity = 1
-var listReward = [rewardReqs]
+GoodieCore.reedemReward(authToken: "authToken", deviceUniqId: "deviceUniqId", memberId: "memberId", merchantId: "merchantId", rewardId: "rewardId", quantity: 1, completion: { (RewardRedemptionResponse) in
 
-GoodieCore.reedemReward(authToken: "authToken", deviceUniqId: "deviceUniqId", memberId: "memberId", merchantId: "merchantId", listReward: [RewardReq], completion: { (RewardRedemptionResponse) in
-    if RewardListResponse.abstractResponse?.responseStatus == "RWRED000" {
-        //success, do something
+    if RewardRedemptionResponse.abstractResponse?.responseStatus == "RWRED000" {
+         //success, do something
     }else{
         //failed
     }
-}, onError: { (Error) in
-    //error
-})
+
+}) { (Error) in
+    print("error")
+}
 ```
 
 ## List My Reward
@@ -347,7 +344,7 @@ trxType :
 
 nRecord = jumlah record dalam string
 
-GoodieCore.listHistory(authToken: "authToken", deviceUniqueId: "deviceUniqueId", memberId: "memberId", merchantId: "merchantId", trxType: "1", orderBy: "1", orderType: "1", nRecord: "10", page: "0", completion: { (ListPointTransactionResponse) in
+GoodieCore.listHistory(authToken: "authToken", deviceUniqueId: "deviceUniqueId", memberId: "memberId", merchantId: "merchantId", trxType: "1", orderBy: "1", orderType: "1", nRecords: "10", page: "0", completion: { (ListPointTransactionResponse) in
     if ListPointTransactionResponse.abstractResponse?.responseStatus == "TRX018" {
         //success, do something
     }else{
